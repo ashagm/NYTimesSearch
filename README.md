@@ -1,4 +1,7 @@
 # NYTimesSearch
+
+Access here -  https://ashagm.github.io/NYTimesSearch/
+
 Search for Articles using NY times API
 
 Required: Search parameter

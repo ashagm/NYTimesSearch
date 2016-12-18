@@ -1,0 +1,40 @@
+html,
+body{
+	margin: 0 auto;
+	font-family: 'Cormorant Infant', serif;
+}
+
+#main-header{
+	background-color: #000040;
+	color: #fff;
+	text-align: center;
+	border-radius: 10px;
+}
+
+.container{
+	padding: 0px;
+}
+
+#search-div{
+	/*border: 1px solid #000040;*/
+	/*padding: 10px;*/
+}
+
+#search-div .row{
+	/*margin-top: 10px;*/
+}
+
+.section-header{
+	background-color: #000040 !important;
+	color: #ffffff !important;
+
+}
+#results-div{
+	margin-top: 20px;
+}
+
+.article-result{
+	background-color: #ffffff;
+	color: #000000;
+}
+

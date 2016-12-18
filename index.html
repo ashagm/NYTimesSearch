@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset = "UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Cormorant+Infant" rel="stylesheet">
+	<!-- Font Awesome CSS Icons (For cool glyphicons) -->
+ 	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<title>NY Times Search</title>
+</head>
+<body>
+
+<div class="container">
+  <div class="jumbotron" id="main-header">
+    <h1><i class="fa fa-newspaper-o" aria-hidden="true"></i>  New York Times  Search</h1> 
+  </div>
+</div>
+
+<!-- <div class= "container" id="search-div">
+		<div class= "section-header ">
+				<label><i class="fa  fa-list-alt"></i>   Search Parameters </label>
+		</div>
+	<form>
+		<div class= "row">
+			<div class="col-md-12 form-group">
+				<label for="search-text-input"> Search Term </label>
+				<input type="text" class="form-control" id="search-text-input" placeholder="Enter the search..">
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12 form-group">
+		    	<label for="number-of-records-input">Number of Records to Retrieve</label>
+			    <select class="form-control" id="number-of-records-input">
+			      <option>1</option>
+			      <option>5</option>
+			      <option>10</option>
+			    </select>
+		  	</div>
+		</div>  
+		<div class ="row">
+			<div class="col-md-12 form-group">
+				<label for="start-date-input" class="col-form-label">Start Year (optional)</label>
+				<input class="form-control" type="text"  id="start-date-input">
+			</div>
+		</div>
+		<div class ="row">
+			<div class="col-md-12 form-group">
+				<label for="end-date-input" class="col-form-label">End Year (optional)</label>
+				<input class="form-control" type="text" id="end-date-input">
+
+			</div>
+		</div>	
+		
+	</form>
+	<div class="row">
+		<div class="col-md-6  form-group">
+			<button type="submit" class="btn btn-primary" id="run-search">
+			<span class="glyphicon glyphicon-search"></span>  Submit</button>
+			<button type="reset" class="btn btn-danger" id="clear-search">
+			<span class="glyphicon glyphicon-trash"></span>  Clear Results</button>
+		</div>
+	</div>	
+</div> -->
+
+<div class="container" id="search-div">
+    <div class="panel panel-default">
+      	<div class="panel-heading section-header">
+            <h3 class="panel-title"><i class="fa fa-list-alt"></i>  Search Parameters</h3>
+      	</div>
+      	<div class="panel-body">	
+      		<form>
+			<div class= "row">
+				<div class="col-md-12 form-group">
+					<label for="search-text-input"> Search Term </label>
+					<input type="text" class="form-control" id="search-text-input" placeholder="Enter the search..">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12 form-group">
+			    	<label for="number-of-records-input">Number of Records to Retrieve</label>
+				    <select class="form-control" id="number-of-records-input">
+				      <option>1</option>
+				      <option>5</option>
+				      <option>10</option>
+				    </select>
+			  	</div>
+			</div>  
+			<div class ="row">
+				<div class="col-md-12 form-group">
+					<label for="start-date-input" class="col-form-label">Start Year (optional)</label>
+					<input class="form-control" type="text"  id="start-date-input">
+				</div>
+			</div>
+			<div class ="row">
+				<div class="col-md-12 form-group">
+					<label for="end-date-input" class="col-form-label">End Year (optional)</label>
+					<input class="form-control" type="text" id="end-date-input">
+				</div>
+			</div>				
+			</form>
+			<div class="row">
+				<div class="col-md-6  form-group">
+					<button type="submit" class="btn btn-primary" id="run-search">
+					<span class="glyphicon glyphicon-search"></span>  Submit</button>
+					<button type="reset" class="btn btn-danger" id="clear-search">
+					<span class="glyphicon glyphicon-trash"></span>  Clear Results</button>
+				</div>
+			</div>	
+      </div>
+    </div>
+</div>
+
+
+<div class="container" id="results-div">
+	<div class="row">
+      <div class="col-md-12">
+        <div class="panel panel-default">
+          <div class="panel-heading section-header">
+            <h3 class="panel-title"><i class="fa fa-table"></i>  Top Articles</h3>
+          </div>
+          <div class="panel-body" id="search-results">
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+
+
+<!-- Include the JS files required  -->
+<script src="https://code.jquery.com/jquery-3.1.1.js"
+integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="assets/javascript/app.js"></script>
+
+</body>
+</html>

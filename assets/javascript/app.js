@@ -68,11 +68,9 @@ var articleNumber = 0;
     		console.log(NYTResponse.response.docs[i].pub_date);
     		console.log(NYTResponse.response.docs[i].web_url);
 
-
     	}
 
     }
-
 
 });
 
